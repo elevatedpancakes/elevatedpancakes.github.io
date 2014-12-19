@@ -1,43 +1,73 @@
 doctype html
 html
   head
-    Title Nathans Family Tree
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=devicewidth, initial-scale=1">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
-    //<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/output.css">
-    <link rel="stylesheet" href="css/tree.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    title NRJ
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=devicewidth, initial-scale=1")
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', rel='stylesheet', type='text/css')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+    link(rel="stylesheet", href="css/output.css")
+    link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", rel="stylesheet")
+    .container
+  header
+    nav.navbar.navbar-default(role='navigation').navbar-fixed-top
+      .container
+          //
+             Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#') NRJ
+          //
+             Collect the nav links, forms, and other content for toggling
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='#') Home
+                  span.sr-only (current)
+              li
+                a(href='#') Work
+              li
+                a(href='#') About
+              li
+                a(href='#') Contact
+    body
+      .margin
 
-    -var br = '<br />'
-    .tree
-      ul
-        li
-          a(href="#")
-            p Legend
-            br
-            p Married '==='
-            br
-            p Divorced '---'
-      ul
-        li
-          a(href='#') Robert C. Sutherland === Jane S. Hughs <br /><img src="css/img/robert.jpg" width="100" height="100"><img src="css/img/jane.jpg" width="100" height="100"><br /> <strong>Mon Gand-p&egrave;re et ma Grand-m&egrave;re</strong>
-          ul
-            li
-              a(href='#') Suzzane Sutherland === Louie Baldinegro <br /><img src="css/img/suzi.jpg" width="100" height="100"><img src="css/img/louie.jpg" width="100" height="100"><br /> <strong>Ma tante et mon beau-l'oncle</strong>
-              ul
-                li
-                  a(href='#') Faith Baldinegro<br /><img src="css/img/faith.jpg" width="100" hieght="100"> <br /><strong> Ma cousine</strong>
-            li
-              a(href='#') Jennifer M. Sutherland <br /> <img src="css/img/jenny.jpg" width="100" height="100"><br /><strong> Ma tante</strong>
-              ul
-                li
-                  a(href='#') Jack R. Sutherland <br /><img src="css/img/jack.jpg" width="100" height="100"> <br /><strong> Mon cousin</strong>
-                li
-                  a(href='#') Charlie A. Sutherland <br /><img src="css/img/charlie.jpg" width="100" height="100"><br /><strong> Ma cousine</strong>
-            li
-              a(href='#') Sarah E. Sutherland --- Jonior Jean-Simon <br /><img src="css/img/sarah.jpg" width="100" height="100"><img src="css/img/jay.jpg" width="100" height="100"><br /><strong> Ma M&egrave;re et mon m&egrave;re</strong>
-              ul
-                li
-                  a(href='#') Nathan R. Jean-Simon <br /><img src="css/img/nathan.jpg" width="100" height="100"><br /><strong> Moi</strong>
+      .jumbotron.mt-500
+        .row
+          .col-md-2.col-md-offset-1
+            .thumbnail
+              i.fa.fa-code.fa-3x
+                .caption
+                  h3 Work
+                p These are some of the projects i've been worked on!
+                p
+                  a.btn.btn-primary(href='work.html', role='button') Works
+
+
+          .col-md-4.col-md-offset-1
+            .thumbnail.pad-10px
+              i.fa.fa-user.fa-4x
+                .caption
+                  h2 About Me
+                p Sea timeam molestiae theophrastus et. Ut ullum oratio malorum mea, vel ex eligendi lucilius. Ne cum falli euismod euripidis, id dico constituto complectitur sed, cu ullum epicurei verterem usu. At nec oporteat euripidis. Usu cibo vidit definiebas ea. Nec ei porro inani tollit, vocibus civibus recteque ne est.
+
+          .col-md-2.col-md-offset-1
+            .thumbnail
+              i.fa.fa-envelope-o.fa-3x
+                .caption
+                  h3 Contact Me
+                p If you'd like to get in touch with me press this button!
+                p
+                  a.btn.btn-primary(href='email.html', role='button') Email
+
+    footer
+      .container
+          .row
+            .col-md-2.col-md-offset-2
+              p.text-center
+                | Copyright &copy; 2014 ElevatedPancakes
